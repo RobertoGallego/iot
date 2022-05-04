@@ -4,12 +4,13 @@ metadata:
   labels:
     app: iot
   name: iot-service
+  namespace: dev
 spec:
   type: ClusterIP
   selector:
     app: iot
   ports:
   - name: http
-    port: 80
+    port: 8888
     protocol: TCP
     targetPort: 8888

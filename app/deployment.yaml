@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: iot-deploy
+  namespace: dev
   labels:
     app: iot
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
       - name: iot
-        image: wil42/playground:v2
+        image: wil42/playground:v1
         ports:
         - containerPort: 8888
       
