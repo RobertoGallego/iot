@@ -5,19 +5,5 @@ metadata:
   namespace: dev
   labels:
     app: iot
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: iot
-  template:
-    metadata:
-      labels:
-        app: iot
-    spec:
-      containers:
-      - name: iot
-        image: wil42/playground:v1
-        ports:
-        - containerPort: 8888
+
       
