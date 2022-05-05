@@ -18,4 +18,4 @@ spec:
           service:
             name: wil-playground-service
             port:
-              number: 888
+              number: 80
