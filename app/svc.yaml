@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: iot
-  name: iot-service
+    app: wil-playground
+  name: wil-playground-service
   namespace: dev
 spec:
   type: ClusterIP
   selector:
-    app: iot
+    app: wil-playground
   ports:
   - name: http
     port: 80
