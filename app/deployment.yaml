@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wil-playground-deployment
-  # namespace: dev
-  labels:
-    app: wil-playground
+  namespace: dev
+  # labels:
+  #   app: wil-playground
 spec:
   replicas: 1
   selector:
