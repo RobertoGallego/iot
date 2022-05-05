@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: wil-playground
+  name: wil-playground-service
+spec:
+  type: ClusterIP
+  selector:
+    app: wil-playground
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8888
